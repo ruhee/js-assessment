@@ -34,7 +34,10 @@ exports.arraysAnswers = {
   },
 
   append : function(arr, item) {
+    var len = arr.length;
+    arr[len] = item;
 
+    return arr;
   },
 
   truncate : function(arr) {
