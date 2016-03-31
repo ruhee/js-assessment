@@ -45,7 +45,12 @@ exports.arraysAnswers = {
   },
 
   prepend : function(arr, item) {
+    var newArr = [item];
+    for(var i = 0; i < arr.length; i++){
+      newArr[i+1] = arr[i];
+    }
 
+    return newArr;
   },
 
   curtail : function(arr) {
